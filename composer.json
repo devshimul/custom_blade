@@ -1,0 +1,13 @@
+{
+    "name": "devshimul/custom_blade",
+    "description": "This will create custom blade",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Devshimul\\CustomBlade\\": "src/"
+        }
+    }
+}
