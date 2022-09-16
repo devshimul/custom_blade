@@ -12,7 +12,7 @@
     },"extra": {
         "laravel": {
             "providers": [
-                "Devshimul\\CustomBlade\\ServiceProvider"
+                "Devshimul\\CustomBlade\\CustomBladeServiceProvider"
             ]
         }
     }
