@@ -7,12 +7,12 @@
     "require": {},
     "autoload-dev": {
         "psr-4": {
-            "Devshimul\\CustomBlade\\": "src/"
+            "Devshimul\\Customblade": "src/"
         }
     },"extra": {
         "laravel": {
             "providers": [
-                "Devshimul\\CustomBlade\\CustomBladeServiceProvider"
+                "Devshimul\\Customblade\\CustomBladeServiceProvider"
             ]
         }
     }

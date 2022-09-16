@@ -1,6 +1,6 @@
 <?php
 
-use Devshimul\CustomBlade\Http\Controllers\CustomBladeController;
+use Devshimul\Customblade\Http\Controllers\CustomBladeController;
  
  
 Route::get('custom_blade', [CustomBladeController::class, 'index']); 
