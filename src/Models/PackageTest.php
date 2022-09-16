@@ -1,6 +1,6 @@
 <?php
 
-namespace Devshimul\Customblade\Models;
+namespace Devshimul\CustomBlade\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

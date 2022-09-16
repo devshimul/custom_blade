@@ -1,18 +1,19 @@
 {
-    "name": "devshimul/custom_blade",
-    "description": "This will create custom blade",
+    "name": "devshimul/custom-blade",
+    "description": "This will create custom blade file using artisan command",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
     "require": {},
-    "autoload-dev": {
+    "autoload": {
         "psr-4": {
-            "Devshimul\\Customblade": "src/"
+             "devshimul\\CustomBlade\\": "src/"
         }
-    },"extra": {
+    },
+    "extra": {
         "laravel": {
             "providers": [
-                "Devshimul\\Customblade\\CustomBladeServiceProvider"
+                "Devshimul\\CustomBlade\\CustomBladeServiceProvider"
             ]
         }
     }

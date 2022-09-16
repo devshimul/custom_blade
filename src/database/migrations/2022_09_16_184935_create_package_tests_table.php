@@ -15,7 +15,6 @@ class CreatePackageTestsTable extends Migration
     {
         Schema::create('package_tests', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
             $table->timestamps();
         });
     }
