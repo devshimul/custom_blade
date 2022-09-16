@@ -7,7 +7,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-             "devshimul\\CustomBlade\\": "src/"
+             "Devshimul\\CustomBlade\\": "src/"
         }
     },
     "extra": {
