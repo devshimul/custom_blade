@@ -29,5 +29,9 @@ class CustomBladeServiceProvider extends ServiceProvider
                 CreateBlade::class, 
             ]);
         }
+
+        $this->publishes([
+            __DIR__.'/template.html' => resource_path('views/vendor/commands'),
+        ]);
     }
 }
