@@ -29,8 +29,5 @@ class CustomBladeServiceProvider extends ServiceProvider
                 CreateBlade::class, 
             ]);
         }
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
-        $this->loadViewsFrom(__DIR__.'/views', 'CustomBlade');
-        $this->loadMigrationsFrom(__DIR__.'/database/migrations'); 
     }
 }
