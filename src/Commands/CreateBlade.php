@@ -12,7 +12,7 @@ class CreateBlade extends Command
      *
      * @var string
      */
-    protected $signature = 'blade:banau {name}';
+    protected $signature = 'create:blade {name}';
 
     /**
      * The console command description.
@@ -44,7 +44,7 @@ class CreateBlade extends Command
         if (!File::isDirectory(resource_path('views/'.$main_path))) {
             File::makeDirectory(resource_path('views/'.$main_path), 0777, true, true);
         }
-        $path =__DIR__.'/template.html'; 
+        $path = resource_path('views/vendor/commands/template.html'); 
         
         $template_data = file_get_contents($path);  
         $path2 = resource_path('views/'.$main_path.'/'.$fileName.'.blade.php'); 
