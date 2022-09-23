@@ -44,7 +44,7 @@ class CreateBlade extends Command
         if (!File::isDirectory(resource_path('views/'.$main_path))) {
             File::makeDirectory(resource_path('views/'.$main_path), 0777, true, true);
         }
-        $path = resource_path('views/vendor/commands/template.html'); 
+        $path = resource_path('views/vendor/templete/basic.html'); 
         
         $template_data = file_get_contents($path);  
         $path2 = resource_path('views/'.$main_path.'/'.$fileName.'.blade.php'); 
