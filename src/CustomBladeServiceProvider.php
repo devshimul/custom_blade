@@ -31,7 +31,7 @@ class CustomBladeServiceProvider extends ServiceProvider
         }
 
         $this->publishes([
-            __DIR__.'/template.html' => resource_path('views/vendor/commands'),
+            __DIR__.'/Commands/template.html' => resource_path('views/vendor/commands'),
         ]);
     }
 }
