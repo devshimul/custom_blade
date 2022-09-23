@@ -2,6 +2,7 @@
 
 namespace Devshimul\CustomBlade;
 
+use Devshimul\CustomBlade\Commands\CreateBlade;
 use Illuminate\Support\ServiceProvider;
 
 class CustomBladeServiceProvider extends ServiceProvider
@@ -13,7 +14,7 @@ class CustomBladeServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        
     }
 
     /**
@@ -23,8 +24,13 @@ class CustomBladeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                CreateBlade::class, 
+            ]);
+        }
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadViewsFrom(__DIR__.'/views', 'CustomBlade');
-        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations'); 
     }
 }
